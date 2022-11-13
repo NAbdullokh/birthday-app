@@ -15,7 +15,7 @@ const Main = ({ day, hour, minute, second }) => {
   const [year, setYear] = useState(new Date().getFullYear());
   const [month, setMonth] = useState(new Date().getMonth() + 1);
   const [date, setDate] = useState(new Date().getDate());
-  const [birth, setBirth] = useState(true);
+  const [birth, setBirth] = useState(false);
   const [openModal, setOpenModal] = useState(false);
 
   // if (date == 9 && month !== 11) {
@@ -105,12 +105,17 @@ const Main = ({ day, hour, minute, second }) => {
         <>
           <Container.Text>Через: </Container.Text>
           <Container.Text>
-            {day}
-            Дней
+            <span style={{ color: "gray" }}>{day}</span> Дней
           </Container.Text>
-          <Container.Text>{hour} Часов</Container.Text>
-          <Container.Text>{minute} Минутов</Container.Text>
-          <Container.Text>{second} Секундов</Container.Text>
+          <Container.Text>
+            <span style={{ color: "gray" }}>{hour}</span> Часов
+          </Container.Text>
+          <Container.Text>
+            <span style={{ color: "gray" }}>{minute}</span> Минутов
+          </Container.Text>
+          <Container.Text>
+            <span style={{ color: "gray" }}>{second}</span> Секундов
+          </Container.Text>
         </>
       ) : (
         ""
