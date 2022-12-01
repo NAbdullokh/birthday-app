@@ -15,6 +15,9 @@ const Root = () => {
   const getYear = () => {
     if (date > 9 && month === 11) {
       return year + 1;
+    }
+    if (month === 12) {
+      return year + 1;
     } else {
       return year;
     }

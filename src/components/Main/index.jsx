@@ -77,7 +77,7 @@ const Main = ({ day, hour, minute, second }) => {
 
           <figure className="chart" data-percent="75">
             <figcaption></figcaption>
-            <p className="javascript">22</p>
+            <p className="javascript">23</p>
 
             <svg width="200" height="200">
               <circle
